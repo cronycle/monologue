@@ -14,6 +14,10 @@ class Monologue::Post < ActiveRecord::Base
   validates :url, uniqueness: true
   validate :url_do_not_start_with_slash
 
+  def author
+    user.name
+  end
+
   def tag_list= tags_attr
     self.tag!(tags_attr.split(","))
   end
