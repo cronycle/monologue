@@ -20,7 +20,7 @@ ul {
   text-decoration: none;
 }
 
-.main-header .social {
+.main-header .social, .admin_link {
   float: right;
   margin: 0 2px 0 2px;
 }
