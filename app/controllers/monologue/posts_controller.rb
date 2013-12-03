@@ -16,6 +16,6 @@ class Monologue::PostsController < Monologue::ApplicationController
   end
 
   def feed
-    @posts = Monologue::Post.published.limit(25)
+    @posts = Monologue::Post.published
   end
 end
