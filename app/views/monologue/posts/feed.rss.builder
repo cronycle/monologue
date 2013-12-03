@@ -5,7 +5,7 @@ xml.rss version: "2.0" do
     xml.description Monologue::Config.meta_description
     xml.link root_url
     xml.pubDate Time.now.to_s(:rfc822)
-    xml.lastBuildDate @posts.map(&:updated_at).sort.last.updated_at.to_s(:rfc822)
+    xml.lastBuildDate @posts.map(&:updated_at).sort.last.to_s(:rfc822)
 
     for post in @posts
       xml.item do
