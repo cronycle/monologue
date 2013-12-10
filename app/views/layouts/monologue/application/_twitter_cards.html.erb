@@ -3,5 +3,5 @@
   <meta name="twitter:site" content="<%= Monologue::Config.twitter_username %>">
 <% end %>
 <meta name="twitter:url" content="<%= request.protocol %><%= request.host_with_port %><%= request.path.gsub("//","/") %>">
-<meta name="twitter:title" content="<%= monologue_accurate_title %>">
+<meta name="twitter:title" content="<%= content_for :title %>">
 <meta name="twitter:description" content="<%= content_for?(:meta_description) ? yield(:meta_description) : Monologue::Config.meta_description  %>">

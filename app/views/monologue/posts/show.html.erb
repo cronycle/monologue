@@ -3,7 +3,7 @@
 <% end %>
 
 <% content_for :meta_description do %>
-  <%= truncate(strip_tags(@post.content), length: 155) %>
+  <%= strip_tags(@post.content) %>
 <% end %>
 
 <article>
